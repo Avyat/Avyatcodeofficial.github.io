@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+    <style>
+        body {
+            background: url("pexels-photo-5047949.jpeg");
+        }
+
+        .Left {
+            position: absolute;
+            left: 24px;
+            top: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .Left img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .Mid {
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+            top: 20px;
+            /* border: 2px solid darkorange; */
+            border-radius: 34px;
+        }
+
+        .Right {
+            position: absolute;
+            right: 24px;
+            top: 18px;
+            /* border: 2px solid black; */
+
+        }
+
+        .Right img {
+            width: 200px;
+            border-radius: 34px;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            padding: 20px;
+            text-decoration: none;
+            color: mediumspringgreen;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: darkturquoise;
+        }
+
+        .search {
+            float: right;
+            margin-right: 40px;
+            padding: 4px 24px;
+        }
+
+        .search input {
+            width: 180px;
+            border: 4px solid chartreuse;
+            border-radius: 14px;
+            font-weight: bolder;
+        }
+
+        .search input:hover {
+            color: cornflowerblue;
+        }
+
+        .container-1 h1 {
+            color: rgb(255, 163, 252);
+            text-align: center;
+        }
+
+        .container-1 h1:hover {
+            text-decoration: underline;
+            color: palegoldenrod;
+            cursor: pointer;
+        }
+
+        .container-1 {
+            position: absolute;
+            left: 24px;
+            top: 210px;
+            width: 350px;
+            /* border: 2px solid lightpink; */
+
+        }
+
+        .container-1 h2 {
+            color: rgb(224, 221, 11);
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        .container-1 h2:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .container-2 {
+            position: absolute;
+            right: 26px;
+            top: 300px;
+            /* border: 2px solid hotpink; */
+        }
+
+        .container-2 img {
+            width: 350px;
+            border-radius: 24px;
+            padding: 8px 10px;
+        }
+
+        .container-3 {
+            position: absolute;
+            right: 20px;
+            top: 600px;
+            /* border: 2px solid mediumpurple; */
+
+        }
+
+        .container-3 img {
+            width: 368px;
+            border-radius: 24px;
+            padding: 8px 10px;
+        }
+
+        .forms {
+            display: block;
+            width: 40%;
+            margin: 150px auto;
+            /* border: 2px solid mediumslateblue; */
+        }
+
+        .forms h2 {
+            text-align: center;
+            color: chartreuse;
+        }
+
+        .forms h2:hover {
+            text-decoration: underline;
+            color: cyan;
+            cursor: pointer;
+        }
+
+        .formgroup {
+            padding: 25px 29px;
+        }
+
+        .formgroup input {
+            width: 450px;
+            padding: 14px 24px;
+            border-radius: 24px;
+            font-size: 25px;
+        }
+
+        .school {
+            color: greenyellow;
+            font-size: 25px;
+            /* border: 2px solid goldenrod; */
+            padding: 0px 34px;
+            cursor: pointer;
+        }
+
+        .btn {
+            margin: 20px 147px;
+            padding: 3px 54px;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            color: tomato;
+        }
+
+        .feedback {
+            /* border: 2px solid mediumturquoise; */
+            border-radius: 24px;
+            position: absolute;
+            left: 24px;
+            top: 955px;
+            width: 350px;
+            font-size: 20px;
+            color: mediumaquamarine;
+        }
+
+        .Activities ul li:hover {
+            text-decoration: underline;
+            color: mediumturquoise;
+        }
+
+        .container-4 {
+            /* border: 2px solid mediumturquoise; */
+            position: absolute;
+            right: -4px;
+            top: 920px;
+            width: 350px;
+            margin: 12px 24px;
+            padding: 10px 24px;
+            font-size: 25px;
+            color: mediumturquoise;
+            font-style: italic;
+        }
+
+        .container-4:hover {
+            color: greenyellow;
+        }
+        .Companies{
+            position: absolute;
+            left: 24px;
+            top: 1250px;
+            text-align: center;
+            width: 60%;
+        }
+        .Companies img{
+            width: 130%;
+        }
+        .Companies h1{
+            color: honeydew;
+            cursor: pointer;
+        }
+        .Companies h1:hover{
+            text-decoration: underline;
+            color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Left">
+            <img src="Best-Engineering-Colleges-in-USA-260x195.png" alt="">
+        </div>
+
+        <div class="Mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Email Us</a></li>
+                <li><a href="#">About us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </div>
+
+        <div class="Right">
+            <img src="download.png" alt="">
+        </div>
+    </header>
+    <div class="container-1">
+        <h1>DEPARTMENTS</h1>
+        <div class=branch>
+            <h2>Computer Science Engineering</h2>
+            <h2>Information Technology Engineering</h2>
+            <h2>Electronics And Communication Engineering</h2>
+            <h2>Applied Instrumental Communication Engineering</h2>
+            <h2>Electrical Engineering</h2>
+            <h2>MEchanica Engineering</h2>
+            <h2>Civil Engineering</h2>
+            <h2>Food Technology</h2>
+        </div>
+    </div>
+    <div class=container-2>
+        <img src="pexels-photo-3861958.jpeg" alt="">
+    </div>
+    <div class=container-3>
+        <img src="pexels-photo-5940831.jpeg" alt="">
+    </div>
+    <div class="forms">
+        <h2>Apply online</h2>
+        <form action="notation.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="formgroup">
+                <input type="date" name="my date" id="date" placeholder="Admission Date">
+            </div>
+
+            <div class="school">
+                Schooling: CBSE <input type="radio" name="mySchooling"> ICSE <input type="radio" name="mySchooling">
+                other<input type="radio" name="mySchooling">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your passout school">
+            </div>
+
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter you 10th (percentage)">
+            </div>
+
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter you 12th (percentage)">
+            </div>
+
+            <div class="formgroup">
+                <Input type="text" name="" placeholder="State">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Dist">
+            </div>
+
+            <button class="btn">
+                Apply Now
+            </button>
+        </form>
+    </div>
+    <div class="feedback">
+        <details>
+            <summary>Reviews</summary>
+            <div>
+                <label for="file">Placement</label>
+                <progress id="file" value="92" max="100">92</progress>
+            </div>
+            <div>
+                <label for="file">Infrastructure</label>
+                <progress id="file" value="88" max="100">88</progress>
+            </div>
+            <div>
+                <label for="file">Library's Books</label>
+                <progress id="file" value="93" max="100">93</progress>
+            </div>
+            <div class="Activities">
+                <details>
+                    <summary>Cultural Activites</summary>
+                    <ul type="disc">
+                        <li>Sports Events</li>
+                        <li>Cultural Fest</li>
+                        <li>Alumuni Events</li>
+                    </ul>
+                </details>
+            </div>
+        </details>
+    </div>
+    <div class="container-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo saepe deleniti laudantium nostrum consectetur
+        molestias beatae quas quaerat totam, quam animi error culpa pariatur voluptatibus enim magni minus laborum.
+        Maiores id illo reprehenderit recusandae?
+    </div>
+    <div class="Companies">
+        <h1>Placement Companies</h1>
+        <div>
+            <img src="1000292.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
